@@ -159,11 +159,8 @@ Events.on(engine, "collisionStart", (event) => {
 
 				const result = document.getElementById("result");
 				result.innerText = "Victory";
-				function retry() {
-					retry.style.display = "block";
-				}
-
 				World.add(world, [ground, leftWall, rightWall, topLine, windows]);
+				alert("Victory");
 				window.location.reload();
 			}, 3000);
 		}
